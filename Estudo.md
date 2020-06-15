@@ -111,6 +111,24 @@ O diodo é um componente que só deixa passar corrente em um sentido.
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/13-simbolo-diodo.png?raw=true)
 
-Na figura 11, o diodo deixa passar corrente da direita pra esquerda. Pra verificar o sentido que o diodo deixa corrente passar, basta verificar onde está a faixa cinza.
+O sentido que o diodo permite a corrente passar é o sentido da seta em seu símbolo.
 
-O símbolo de um diodo é esse
+Em um diodo real, se determina esse sentido através da faixa cinza que há nele. Chamamos o terminal mais próximo da faixa cinza de cátodo (negativo) e o terminal mais longe de ânodo (positivo).
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/14-diodo-anodo-catodo.png?raw=true)
+
+Caso o diodo seja ligado diretamente (negativo no cátodo e positivo no ânodo), a corrente fluirá como se o diodo fosse uma chave fechada. Caso ele seja conectado inversamente (positivo no cátodo e negativo no ânodo), o diodo se comportará como uma chave aberta.
+
+Na realidade, o diodo conectado diretamente funciona como chave fechada a partir de determinada tensão. Para entender melhor como isso funciona, veja a figura abaixo.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/15-diodo-polarizacao.png?raw=true)
+
+A região do meio de um diodo é chamada de barreira de potencial (ou camada de depleção). Ela separa o cátodo e o ânodo de um diodo. Quando um diodo é ligado inversamente, essa barreira aumenta pois as cargas positivas são atraídas pelo polo negativo da pilha e as cargas negativas, pelo polo positivo da pilha. Já se o diodo é ligado diretamente, ao aumentar a tensão, a barreira de potencial fica cada vez menor até que, em certo momento, ela desaparece e o diodo passa a funcionar como um fio.
+
+Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, apesar da fonte de tensão fornecer 10V, a tensão no resistor será em torno de 9.2V, já que se trata de um diodo de silício (o material influencia na tensão necessária para "quebrar" a barreira de potencial)
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/16-circuito-e-grafico-diodo.png?raw=true)
+
+*Observação: é comum dizer que o diodo de silício causa uma queda de tensão de aproximadamente 0.7V. Aqui neste documento está escrito como se causasse 0.8V por conta do gráfico presente na imagem*
+
+O significado da sigla LED é *Light Emissor Diode*, ou seja, se trata de um diodo também. LEDs costumam causar uma queda de tensão maior que 0.7V, geralmente multímetros possuem uma função para calcular essa tensão.
