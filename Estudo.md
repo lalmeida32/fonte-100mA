@@ -133,6 +133,8 @@ Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, 
 
 O significado da sigla LED é *Light Emissor Diode*, ou seja, se trata de um diodo também. LEDs costumam causar uma queda de tensão maior que 0.7V, geralmente multímetros possuem uma função para calcular essa tensão.
 
+Há coisas como corrente e tensão máximas que um diodo pode suportar. Isso depende do diodo e esse tipo de informação pode ser encontrada no datasheet.
+
 ### Diodo Zener
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/17-simbolo-diodo-zener.png?raw=true)
@@ -145,7 +147,7 @@ O diodo zener é como um diodo normal, porem a partir de certa tensão ele passa
 
     Uin > |Vzener|, Uout = Vzener
 
-O diodo zener tem uma corrente máxima suportável, e isso é delimitado de acrodo com a potencia do componente, caso a pontência do circuito seja ultrapassada, o diodo pode se danificar.
+O diodo zener tem uma corrente máxima suportável, e isso é delimitado de acordo com a potencia do componente, caso a potência do circuito seja ultrapassada, o diodo pode se danificar.
 
     Izmax = Pz/Vz
 
