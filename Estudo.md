@@ -132,3 +132,33 @@ Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, 
 *Observação: é comum dizer que o diodo de silício causa uma queda de tensão de aproximadamente 0.7V. Aqui neste documento está escrito como se causasse 0.8V por conta do gráfico presente na imagem*
 
 O significado da sigla LED é *Light Emissor Diode*, ou seja, se trata de um diodo também. LEDs costumam causar uma queda de tensão maior que 0.7V, geralmente multímetros possuem uma função para calcular essa tensão.
+
+### Diodo Zener
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/17-simbolo-diodo-zener.png?raw=true)
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/18-grafico-diodo-zener.png?raw=true)
+
+O diodo zener é como um diodo normal, porem a partir de certa tensão ele passa a ser um curto circuito, essa é a TENSÃO ZENER. Se a tensão no diodo zener for menor que a tensão zener ele não conduz, assim como os diodos convencionais. Se a tensão for maior que a tensão zener, o diodo zener mesmo estando contrario ao circuito vai conduzir.
+
+    Uin < |Vzener|, Uout = Uin
+
+    Uin > |Vzener|, Uout = Vzener
+
+O diodo zener tem uma corrente máxima suportável, e isso é delimitado de acrodo com a potencia do componente, caso a pontência do circuito seja ultrapassada, o diodo pode se danificar.
+
+    Izmax = Pz/Vz
+
+    Izmin = Izmax ∙ 0.10
+
+    Rzmin = (Vcc - Vz)/Izmax
+
+    Rzmax = (Vcc - Vz)/Izmin
+
+*Rz: Resistor limitador de corrente*
+
+Esse diodo é muito bom para retificar a onda de tensão, principalmente quando se deseja estabelecer uma tensão continua. Nesse ciruito, o zener pode ser útil, porque ele controla a tensão, cortando-a em apenas um valor. Isso acontece porque ele mantém o valor de tensão máxima em seus terminais caso esteja conduzindo reversamente.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/19-circuito-com-zener.png?raw=true)
+
+Esse é um simples circuito limitador de tensão usando zener. Vout sempre será Vz (tensão zener) na carga sempre que Vin > Vz, já que o diodo zener irá limitar.
