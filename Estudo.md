@@ -167,7 +167,7 @@ Esse é um simples circuito limitador de tensão usando zener. Vout sempre será
 O transformador modifica os níveis de tensão e corrente elétrica, mantendo a potência constante.
 No projeto da fonte vamos precisar de um transformador para reduzir a tensão da tomada, 110V ou 220V, para uma tensão entre 3V - 12V.
 Como a potência se mantém constante, ao usarmos o transformador para diminuir a tensão, a corrente do nosso circuito vai aumentar. 
-P1 = P2 <=> V1*I1 = V2*I2
+P1 = P2 <=> V1xI1 = V2xI2
 
 Estrutura:
 Enrolamento:  O enrolamento de um transformador é formado de várias bobinas (os transformadores mais comuns usam duas) que em geral são feitas de cobre. Quando a corrente passa pela bobina forma um campo magnético que produz uma tensão elétrica nas extremidades desse enrolamento. A alteração na corrente presente na bobina do circuito primário altera o fluxo magnético nesse circuito e também na bobina do circuito secundário.
