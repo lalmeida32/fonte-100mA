@@ -123,9 +123,9 @@ Na realidade, o diodo conectado diretamente funciona como chave fechada a partir
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/15-diodo-polarizacao.png?raw=true)
 
-A região do meio de um diodo é chamada de barreira de potencial (ou camada de depleção). Ela separa o cátodo e o ânodo de um diodo. Quando um diodo é ligado inversamente, essa barreira aumenta pois as cargas positivas são atraídas pelo polo negativo da pilha e as cargas negativas, pelo polo positivo da pilha. Já se o diodo é ligado diretamente, ao aumentar a tensão, a barreira de potencial fica cada vez menor até que, em certo momento, ela desaparece e o diodo passa a funcionar como um fio.
+A região do meio de um diodo é chamada de barreira de potencial (ou camada de depleção). Ela separa o cátodo e o ânodo de um diodo. Quando um diodo é ligado inversamente, essa barreira aumenta pois as cargas positivas são atraídas para o polo negativo da pilha e as cargas negativas, para o polo positivo da pilha. Já se o diodo é ligado diretamente, ao aumentar a tensão, a barreira de potencial fica cada vez menor até que, em certo momento, ela desaparece e o diodo passa a funcionar como um fio.
 
-Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, apesar da fonte de tensão fornecer 10V, a tensão no resistor será em torno de 9.2V, já que se trata de um diodo de silício (o material influencia na tensão necessária para "quebrar" a barreira de potencial)
+Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, apesar da fonte de tensão fornecer 10V, a tensão no resistor será em torno de 9.2V, já que se trata de um diodo de silício (o material influencia na tensão necessária para "quebrar" a barreira de potencial).
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/16-circuito-e-grafico-diodo.png?raw=true)
 
