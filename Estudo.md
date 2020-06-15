@@ -163,7 +163,7 @@ Esse diodo é muito bom para retificar a onda de tensão, principalmente quando 
 
 Esse é um simples circuito limitador de tensão usando zener. Vout sempre será Vz (tensão zener) na carga sempre que Vin > Vz, já que o diodo zener irá limitar.
 
-### Traformadores
+### Transformadores
 O transformador modifica os níveis de tensão e corrente elétrica, mantendo a potência constante.
 No projeto da fonte vamos precisar de um transformador para reduzir a tensão da tomada, 110V ou 220V, para uma tensão entre 3V - 12V.
 Como a potência se mantém constante, ao usarmos o transformador para diminuir a tensão, a corrente do nosso circuito vai aumentar. 
