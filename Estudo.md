@@ -59,7 +59,6 @@ O capacitor é um componente que armazena cargas elétricas.
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/7-capacitor-eletrolitico.png?raw=true)
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/8-funcionamento-do-capacitor.png?raw=true)
-
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/9-possiveis-simbolos-de-capacitores.png?raw=true)
 
 *Observação: Alguns tipos de capacitores são polarizados e outros não*
@@ -80,8 +79,7 @@ Há também outro jeito de calcular a capacitância:
 
 Em que C é a capacitância, em farads, q é a carga elétrica armazenada, em coulombs, e V é a diferença de potencial, em volts.
 
-Sendo assim, temos que
-    1F = 1C/V.
+Sendo assim, temos que 1F = 1C/V.
 
 Ao associar capacitores em série ou paralelo, podemos obter um capacitor com capacitância equivalente aplicando as seguintes fórmulas:
 
@@ -104,3 +102,15 @@ Nesse circuito, o tempo que leva para o capacitor carregar é diretamente propor
 A tensão elétrica no gerador de tensão define qual será a tensão máxima que o capacitor poderá atingir.
 
 *Observação: Ao descarregar o capacitor em um resistor, os gráficos são semelhantes, mas a tensão e a carga no capacitor diminuem ao invés de aumentar.*
+
+### Diodo
+
+O diodo é um componente que só deixa passar corrente em um sentido.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/12-diodo.png?raw=true)
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/13-simbolo-diodo.png?raw=true)
+
+Na figura 11, o diodo deixa passar corrente da direita pra esquerda. Pra verificar o sentido que o diodo deixa corrente passar, basta verificar onde está a faixa cinza.
+
+O símbolo de um diodo é esse
