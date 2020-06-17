@@ -289,10 +289,38 @@ Mas se Vout for maior que Vzener, a tensão em Rl e no zener será Vzener, e a t
 
 Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o circuito funcionará do modo esperado.
 
-#### Transistor NPN
-
-
 
 #### Papel na fonte
 
 Necessário estudar o transistor NPN antes de prosseguir.
+
+
+### Transistor NPN
+
+O transistor TBJ NPN, é um componente que funciona como uma válvula/interruptores de tensão em um circuito, ou também, ele funciona ou barrando, ou amplificando a corrente elétrica. Seu funcionamento depende de 3 terminais, base, coletor e emissor. A corrente a ser controlada é a Ic :=corrente no coletor, ou seja, é a corrente que passa do coletor ao emissor.
+
+1) Base: é o terminal controlador, ele que determina se haverá ou não passagem de corrente entre o coletor e o emissor.
+
+2) Coletor: entrada do transistor, ela que inicialmente controla a tensão e corrente no emissor.
+
+3) Emissor: saída do transistor.
+
+Definição de Variáveis:
+
+a) Vc: tensão no coletor;
+
+b) Vb: tensão na base;
+
+d) Vbe: tensão entre a base e o emissor, normalmente está entre 0,7V;
+
+c) Ve: tensão no emissor;
+
+Ve(max) = Vb – Vbe
+
+Inicialmente, Ve = Vc; Mas caso, Vc < Vb: Ve = Vb – Vbe.
+
+e) Vce = Vc – Ve;
+
+f) Ib = Ic / ganho		ou	Ib = (Vb – Vc ) / Rb
+
+g) Ic = Ve / Re		ou	Ic = Ib * ganho
