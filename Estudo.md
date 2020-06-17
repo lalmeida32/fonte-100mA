@@ -168,6 +168,7 @@ Esse é um simples circuito limitador de tensão usando zener. Vout sempre será
 ### Transformadores
 O transformador modifica os níveis de tensão e corrente elétrica, mantendo a potência constante.
 Como a potência se mantém constante, ao usarmos o transformador para diminuir a tensão, a corrente do nosso circuito vai aumentar.
+
     P1 = P2 <=> V1 . I1 = V2 . I2
 
 Estrutura:
@@ -184,6 +185,8 @@ O transformador altera a tensão através de duas bobinas, seguindo uma proporç
 Os valores analisados em um transformador são relativos à tensão eficaz. Por exemplo, a tensão eficaz V1 é transformada na tensão eficaz V2.
 Para calcular a tensão eficaz, basta dividir a tensão de pico por √2.
 
+As tomadas residenciais geralmente fornecem de 110V a 127V ou de 220V a 254V de tensão eficaz.
+
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/21-tensao-eficaz.png?raw=true)
 
 Há transformadores com derivação central. Segue na imagem abaixo um exemplo de um.
@@ -194,8 +197,6 @@ Se o transformador for 12V + 12V, por exemplo, significa que entre um dos termin
 
 Além disso, transformadores reais possuem rendimento, pois dissipam calor. Por exemplo, um transformador com 90% de rendimento, significa que a potência no secundário é 90% da potência no primário. Transformadores bons possuem mais que 90% de rendimento.
 
-As tomadas residenciais geralmente fornecem de 110V a 127V ou de 220V a 254V de tensão eficaz.
-
 Geralmente transformadores são projetados também com um fio a mais no primário para tornar possível a escolha entre 127V ou 220V.
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/23-transformador-12-12.png?raw=true)
@@ -203,6 +204,25 @@ Geralmente transformadores são projetados também com um fio a mais no primári
 Este é um exemplo de transformador real. Nesse caso, o fio de 127V está no meio da bobina, como na derivação central, mas não se encontra exatamente no meio.
 
 Uma chave seletora pode ajudar na passagem de 127V para 220V e vice-versa.
+
+### Potenciômetro
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/24-potenciometro-real.png?raw=true)
+
+Um potenciômetro é como se fosse um conjunto de duas resistências em que é possível regular manualmente a proporção em que cada uma delas vai receber da resistência total. Segue duas imagens para melhor
+entendimento.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/25-potenciometro-funcionamento.png?raw=true)
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/26-potenciometro-analogia-resistores.png?raw=true)
+
+O cursor pode ser ajustado manualmente. Ele determina qual porção da resistência total do potenciômetro o R1 e o R2 vai ter. Note que R1 + R2 deve ser igual à resistência do potenciômetro.
+
+Note também que tc é o terminal do cursor, enquanto t1 e t2 são os terminais de R1 e de R2, respectivamente.
+
+Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R1 e de R2 pode ser regulado pelo cursor. Por exemplo, ao aproximar o cursor de t1, R1 se aproxima de 0Ω e R2 se aproxima de 100Ω. Ao aproximar de t2, R2 se aproxima de 0Ω enquanto R1 se aproxima de 100Ω. Há infinitos valores intermediários, como R1 = 67.3Ω e R2 = 32,7Ω.
+
+Potenciômetros podem ser encontrados, por exemplo, em caixas de som no regulador de áudio.
 
 ## Seções da fonte
 
