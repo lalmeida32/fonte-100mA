@@ -209,23 +209,42 @@ Uma chave seletora pode ajudar na passagem de 127V para 220V e vice-versa.
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/24-potenciometro-real.png?raw=true)
 
-Um potenciômetro é como se fosse um conjunto de duas resistências em que é possível regular manualmente a proporção em que cada uma delas vai receber da resistência total. Segue duas imagens para melhor
-entendimento.
+Um potenciômetro é como se fosse um conjunto de duas resistências em que é possível regular manualmente a proporção em que cada uma delas vai receber da resistência total. Segue duas imagens para melhor entendimento.
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/25-potenciometro-funcionamento.png?raw=true)
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/26-potenciometro-analogia-resistores.png?raw=true)
 
-O cursor pode ser ajustado manualmente. Ele determina qual porção da resistência total do potenciômetro o R1 e o R2 vai ter. Note que R1 + R2 deve ser igual à resistência do potenciômetro.
+O cursor pode ser ajustado manualmente. Ele determina qual porção da resistência total do potenciômetro o R1 e o R2 vão ter. Note que R1 + R2 deve ser igual à resistência do potenciômetro.
 
 Note também que tc é o terminal do cursor, enquanto t1 e t2 são os terminais de R1 e de R2, respectivamente.
 
-Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R1 e de R2 pode ser regulado pelo cursor. Por exemplo, ao aproximar o cursor de t1, R1 se aproxima de 0Ω e R2 se aproxima de 100Ω. Ao aproximar de t2, R2 se aproxima de 0Ω enquanto R1 se aproxima de 100Ω. Há infinitos valores intermediários, como R1 = 67.3Ω e R2 = 32,7Ω.
+Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R1 e de R2 pode ser regulado pelo cursor. Por exemplo, ao aproximar o cursor de t1, R1 se aproxima de 0Ω e R2 se aproxima de 100Ω. Ao aproximar de t2, R2 se aproxima de 0Ω enquanto R1 se aproxima de 100Ω. Há infinitos valores intermediários, como R1 = 67.3Ω e R2 = 32.7Ω.
 
 Potenciômetros podem ser encontrados, por exemplo, em caixas de som no regulador de áudio.
 
 ## Seções da fonte
 
-### Transformador
+### Papel do Transformador
 
 No projeto da fonte vamos precisar de um transformador para reduzir a tensão da tomada, 110V ou 220V, para uma tensão entre 3V - 12V.
+
+O papel do transformador na fonte é reduzir a tensão da entrada para que o circuito não precise trabalhar com tensões muito elevadas que podem danificar componentes ou exigir componentes mais caros.
+
+### Papel da Ponte Retificadora
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/27-ponte-retificadora.png?raw=true)
+
+A ponte retificadora, uma associação de 4 diodos, serve para transformar a corrente alternada em uma corrente contínua pulsante (a polaridade se mantém, mas a tensão ainda varia com o tempo). A propriedade dos diodos que é utilizada na ponte retificadora é a de não conduzir quando está polarizado inversamente.
+
+Segue uma análise da ponte retificadora em uma carga.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/28-ponte-retificadora-sentido-1.png?raw=true)
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/29-ponte-retificadora-sentido-2.png?raw=true)
+
+Note que tanto faz se o positivo está em cima e o negativo em baixo, ou o positivo em baixo e o negativo em cima. A corrente fluirá pela carga R1 no mesmo sentido: cima para baixo.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/30-ponte-retificadora-grafico.png?raw=true)
+
+A corrente alternada passa pela ponte retificadora e se torna corrente contínua pulsante.
