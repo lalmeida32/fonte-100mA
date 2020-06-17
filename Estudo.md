@@ -289,6 +289,10 @@ Mas se Vout for maior que Vzener, a tensão em Rl e no zener será Vzener, e a t
 
 Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o circuito funcionará do modo esperado.
 
+#### Transistor NPN
+
+
+
 #### Papel na fonte
 
 Necessário estudar o transistor NPN antes de prosseguir.
