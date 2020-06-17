@@ -167,9 +167,8 @@ Esse é um simples circuito limitador de tensão usando zener. Vout sempre será
 
 ### Transformadores
 O transformador modifica os níveis de tensão e corrente elétrica, mantendo a potência constante.
-No projeto da fonte vamos precisar de um transformador para reduzir a tensão da tomada, 110V ou 220V, para uma tensão entre 3V - 12V.
-Como a potência se mantém constante, ao usarmos o transformador para diminuir a tensão, a corrente do nosso circuito vai aumentar. 
-P1 = P2 <=> V1 . I1 = V2 . I2
+Como a potência se mantém constante, ao usarmos o transformador para diminuir a tensão, a corrente do nosso circuito vai aumentar.
+    P1 = P2 <=> V1 . I1 = V2 . I2
 
 Estrutura:
 Enrolamento:  O enrolamento de um transformador é formado de várias bobinas (os transformadores mais comuns usam duas) que em geral são feitas de cobre. Quando a corrente passa pela bobina forma um campo magnético que produz uma tensão elétrica nas extremidades desse enrolamento. A alteração na corrente presente na bobina do circuito primário altera o fluxo magnético nesse circuito e também na bobina do circuito secundário.
@@ -178,3 +177,35 @@ Núcleo: responsável por transferir a corrente do enrolamento primário para o 
 
 O transformador altera a tensão através de duas bobinas, seguindo uma proporção de uma bobina para a outra. ex: se tivermos 100 voltas em uma e 10 voltas na outra, a tensão será transformada na proporção de 10 para 1, ou seja, se tivermos 100V na entrada, teremos 10V na saída.
 
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/20-simbolo-transformador.png?raw=true)
+
+*Observação: damos o nome de primário o enrolamento da esquerda e secundário o da direita*
+
+Os valores analisados em um transformador são relativos à tensão eficaz. Por exemplo, a tensão eficaz V1 é transformada na tensão eficaz V2.
+Para calcular a tensão eficaz, basta dividir a tensão de pico por √2.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/21-tensao-eficaz.png?raw=true)
+
+Há transformadores com derivação central. Segue na imagem abaixo um exemplo de um.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/22-transformador-derivacao-central.png?raw=true)
+
+Se o transformador for 12V + 12V, por exemplo, significa que entre um dos terminais laterais e o terminal do meio, há 12V. Dessa forma, ao medir a tensão entre os terminais laterais, o resultado deve ser 24V (tensão eficaz)
+
+Além disso, transformadores reais possuem rendimento, pois dissipam calor. Por exemplo, um transformador com 90% de rendimento, significa que a potência no secundário é 90% da potência no primário. Transformadores bons possuem mais que 90% de rendimento.
+
+As tomadas residenciais geralmente fornecem de 110V a 127V ou de 220V a 254V de tensão eficaz.
+
+Geralmente transformadores são projetados também com um fio a mais no primário para tornar possível a escolha entre 127V ou 220V.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/23-transformador-12-12.png?raw=true)
+
+Este é um exemplo de transformador real. Nesse caso, o fio de 127V está no meio da bobina, como na derivação central, mas não se encontra exatamente no meio.
+
+Uma chave seletora pode ajudar na passagem de 127V para 220V e vice-versa.
+
+## Seções da fonte
+
+### Transformador
+
+No projeto da fonte vamos precisar de um transformador para reduzir a tensão da tomada, 110V ou 220V, para uma tensão entre 3V - 12V.
