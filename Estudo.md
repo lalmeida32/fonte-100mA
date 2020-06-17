@@ -248,3 +248,47 @@ Note que tanto faz se o positivo está em cima e o negativo em baixo, ou o posit
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/30-ponte-retificadora-grafico.png?raw=true)
 
 A corrente alternada passa pela ponte retificadora e se torna corrente contínua pulsante.
+
+### Papel do Capacitor
+
+O papel do capacitor na fonte é proporcionar o *ripple*. Como agora a corrente é contínua e pulsante, o capacitor armazena a carga e descarrega lentamente enquanto a tensão estaria abaixo da tensão que o capacitor obteve. Segue um gráfico para entender melhor o que seria o *ripple*.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/31-ripple.png?raw=true)
+
+No começo do primeiro ciclo da onda, o capacitor estará sendo carregado até a tensão de pico. Quando a tensão cai, o capacitor libera a carga que foi armazenada aos poucos, até que a tensão de do segundo ciclo da onda seja maior que a tensão no capacitor, que irá carregá-lo novamente. Isso se segue repetidas vezes.
+
+Com o *ripple*, a tensão está mais estável: ainda varia, mas muito menos.
+
+### Papel do Diodo Zener
+
+Antes de mais nada, deve-se entender o que é um divisor de tensão.
+
+#### Divisor de tensão
+
+O divisor de tensão nada mais é que uma análise da tensão em um resistor de um circuito de vários resistores associados em série.
+
+O caso mais comum é o de dois resistores conectados em série. Nesse caso, a fórmula para calcular a tensão no resistor R2 é a seguinte:
+
+    (V ∙ R2) / (R1 + R2)
+
+Em que V é a tensão da alimentação.
+
+A fórmula para R1 é análoga, e para divisores de tensão com mais resistores, basta considerar como R1 (ou R2) o resistor equivalente à todos os resistores exceto aquele cuja tensão está sendo analisada.
+
+O divisor de tensão é uma consequência direta da lei das malhas de *Kirchhoff*.
+
+#### Divisor de tensão combinado com diodo zener
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/19-circuito-com-zener.png?raw=true)
+
+Basicamente, o circuito do divisor de tensão junto com o zener é este.
+
+Funciona da seguinte forma: se o Vout calculado pelo divisor de tensão em Rl for menos que o Vzener, então a tensão em Rl (e no zener) será Vout e a tensão em Rs será Vin - Vout.
+
+Mas se Vout for maior que Vzener, a tensão em Rl e no zener será Vzener, e a tensão em Rs será Vin - Vzener.
+
+Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o circuito funcionará do modo esperado.
+
+#### Papel na fonte
+
+Necessário estudar o transistor NPN antes de prosseguir.
