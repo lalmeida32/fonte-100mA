@@ -223,6 +223,42 @@ Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R
 
 Potenciômetros podem ser encontrados, por exemplo, em caixas de som no regulador de áudio.
 
+### Transistor NPN
+
+O transistor TBJ NPN, é um componente que funciona como uma válvula/interruptores de tensão em um circuito, ou também, ele funciona ou barrando, ou amplificando a corrente elétrica. Seu funcionamento depende de 3 terminais, base, coletor e emissor. A corrente a ser controlada é a Ic := corrente no coletor, ou seja, é a corrente que passa do coletor ao emissor.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/32-transistor-desenho-1.png?raw=true)
+
+1) Base: é o terminal controlador, ele que determina se haverá ou não passagem de corrente entre o coletor e o emissor.
+
+2) Coletor: entrada do transistor, ela que inicialmente controla a tensão e corrente no emissor.
+
+3) Emissor: saída do transistor.
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/33-transistor-desenho-2.png?raw=true)
+
+Definição de Variáveis:
+
+a) Vc: tensão no coletor;
+
+b) Vb: tensão na base;
+
+d) Vbe: tensão entre a base e o emissor, normalmente está entre 0,7V;
+
+c) Ve: tensão no emissor;
+
+Ve(max) = Vb – Vbe
+
+Inicialmente, Ve = Vc; Mas caso, Vc < Vb: Ve = Vb – Vbe.
+
+e) Vce = Vc – Ve;
+
+f) Ie = Ve / Re;
+
+g) Ic = Ie * a = Ie * ganho/ganho+1		ou	Ic = Ib * ganho
+
+h) Ib = Ic / ganho		ou	Ib = (Vb – Vc ) / Rb
+
 ## Seções da fonte
 
 ### Papel do Transformador
@@ -293,41 +329,3 @@ Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o ci
 #### Papel na fonte
 
 Necessário estudar o transistor NPN antes de prosseguir.
-
-
-### Transistor NPN
-
-O transistor TBJ NPN, é um componente que funciona como uma válvula/interruptores de tensão em um circuito, ou também, ele funciona ou barrando, ou amplificando a corrente elétrica. Seu funcionamento depende de 3 terminais, base, coletor e emissor. A corrente a ser controlada é a Ic :=corrente no coletor, ou seja, é a corrente que passa do coletor ao emissor.
-
-![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor 1.png?raw=true)
-
-1) Base: é o terminal controlador, ele que determina se haverá ou não passagem de corrente entre o coletor e o emissor.
-
-2) Coletor: entrada do transistor, ela que inicialmente controla a tensão e corrente no emissor.
-
-3) Emissor: saída do transistor.
-
-![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor2.png?raw=true)
-
-Definição de Variáveis:
-
-a) Vc: tensão no coletor;
-
-b) Vb: tensão na base;
-
-d) Vbe: tensão entre a base e o emissor, normalmente está entre 0,7V;
-
-c) Ve: tensão no emissor;
-
-Ve(max) = Vb – Vbe
-
-Inicialmente, Ve = Vc; Mas caso, Vc < Vb: Ve = Vb – Vbe.
-
-e) Vce = Vc – Ve;
-
-f) Ie = Ve / Re;
-
-g) Ic = Ie * a = Ie * ganho/ganho+1		ou	Ic = Ib * ganho
-
-h) Ib = Ic / ganho		ou	Ib = (Vb – Vc ) / Rb
-
