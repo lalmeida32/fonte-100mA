@@ -305,6 +305,10 @@ O transistor TBJ NPN, é um componente que funciona como uma válvula/interrupto
 
 3) Emissor: saída do transistor.
 
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor 1.png?raw=true)
+
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor2.png?raw=true)
+
 Definição de Variáveis:
 
 a) Vc: tensão no coletor;
