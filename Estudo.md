@@ -325,6 +325,9 @@ Inicialmente, Ve = Vc; Mas caso, Vc < Vb: Ve = Vb – Vbe.
 
 e) Vce = Vc – Ve;
 
-f) Ib = Ic / ganho		ou	Ib = (Vb – Vc ) / Rb
+f) Ie = Ve / Re;
 
-g) Ic = Ve / Re		ou	Ic = Ib * ganho
+g) Ic = Ie * a = Ie * ganho/ganho+1		ou	Ic = Ib * ganho
+
+h) Ib = Ic / ganho		ou	Ib = (Vb – Vc ) / Rb
+
