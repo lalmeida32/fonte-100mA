@@ -299,13 +299,13 @@ Necessário estudar o transistor NPN antes de prosseguir.
 
 O transistor TBJ NPN, é um componente que funciona como uma válvula/interruptores de tensão em um circuito, ou também, ele funciona ou barrando, ou amplificando a corrente elétrica. Seu funcionamento depende de 3 terminais, base, coletor e emissor. A corrente a ser controlada é a Ic :=corrente no coletor, ou seja, é a corrente que passa do coletor ao emissor.
 
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor 1.png?raw=true)
+
 1) Base: é o terminal controlador, ele que determina se haverá ou não passagem de corrente entre o coletor e o emissor.
 
 2) Coletor: entrada do transistor, ela que inicialmente controla a tensão e corrente no emissor.
 
 3) Emissor: saída do transistor.
-
-![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor 1.png?raw=true)
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/transistor2.png?raw=true)
 
