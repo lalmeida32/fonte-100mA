@@ -243,9 +243,9 @@ a) Vc: tensão no coletor;
 
 b) Vb: tensão na base;
 
-d) Vbe: tensão entre a base e o emissor, normalmente está entre 0,7V;
+c) Vbe: tensão entre a base e o emissor, normalmente está entre 0,7V;
 
-c) Ve: tensão no emissor;
+d) Ve: tensão no emissor;
 
 Ve(max) = Vb – Vbe
 
@@ -329,3 +329,98 @@ Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o ci
 #### Papel na fonte
 
 Necessário estudar o transistor NPN antes de prosseguir.
+
+## Dimensionamento
+
+### Transformador
+
+Transformador utilizado: 10+10 bivolt 800mA. Usaremos os terminais das pontas a fim de obter 20V
+
+https://produto.mercadolivre.com.br/MLB-1304934993-transformador-trafo-1010v-800ma-bivolt-eletrnica-_JM?matt_tool=82322591&matt_word&gclid=CjwKCAjwxLH3BRApEiwAqX9are-Hoqy3DhheSooU8NO5g_m_VOuyIxmSU64KT07Ga4GBR1CclxpqFRoCT10QAvD_BwE&quantity=1
+
+Preço: 30 reais
+
+Dados no circuito:
+A tensão máxima no secundário será de aproximadamente 28,28V
+A corrente que passará por ele será de x ma
+
+Por que usaremos esse transformador:
+
+### Diodos para ponte retificadora
+
+Diodos utilizados: 1n4001.
+
+https://www.robocore.net/loja/itens-eletronicos/diodo-1n4007?gclid=CjwKCAjwxLH3BRApEiwAqX9arQYP_1w9nsWFqdvp4X-WlUcxEd8-nIBf6EI5o0YcvvptZfaJRTloMRoCyW0QAvD_BwE
+
+Preço: 18 centavos a unidade
+
+Dados no circuito: provocará uma queda de tensão de 0,7V cada um
+A tensão máxima que antes era 28,28V, será de 26,88V depois de passar pela ponte retificadora
+
+Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V(editado)
+
+### Capacitor
+
+Capacitor utilizado: eletrolítico 470uF / 50V
+
+https://www.baudaeletronica.com.br/capacitor-eletrolitico-470uf-50v.html
+
+Preço: 82 centavos
+
+Dados no circuito: proporcionará um ripple de 25,1V a 26,88V
+
+Por que usaremos esse capacitor: é comum, barato, torna a variação de tensão no ripple baixa e suporta até 50V.
+
+### Diodo Zener
+
+Zener utilizado: BZX55C [13V / 0.5W]
+
+https://www.baudaeletronica.com.br/diodo-zener-bzx55c-13v-0-5w.html
+
+Preço: 8 centavos
+
+Dados no circuito: a corrente que passará por ele será de 15 mA (o circuito foi dimensionado pensando nessa corrente).
+
+Por que usaremos esse zener: é comum, barato e como o circuito será regulado a no maximo 12V, como é uma queda de tensão entre base e emissor no transisor, 13V é o ideal.(editado)
+
+### Transistor NPN
+
+Transistor NPN utilizado: BC337
+
+https://www.robocore.net/loja/itens-eletronicos/transistor-npn-bc337?gclid=CjwKCAjwxLH3BRApEiwAqX9arW03jdNyoyxCW0BkSUH1jNxcEZlj1NO8uKe5adsfmaa_ggKm3B1-3hoC9gwQAvD_BwE
+
+Preço: 24 centavos a unidade
+
+Dados no circuito: os dados irão depender de como o potenciômetro será regulado e da resistência na carga
+Considerando uma carga de 120 ohm e o potenciômetro no estado em que o máximo de tensão é fornecida à carga, como há uma queda de tensão de 0,7V, a carga receberá em torno de 12,3V no máximo, então a corrente no emissor será de 102,5 mA
+Considerando o ganho mínimo de 100, a corrente na base será 1,01mA, e no coletor será 101,5mA
+Considerando agora o ganho máximo de 630, a corrente na base será 0,16mA, e no coletor será 102,34mA
+A tensão de base e coletor será entre 12,1V e 13,88V
+
+Por que usaremos esse transistor: é comum, barato e suporta a tensão e corrente necessárias no circuito
+
+### Resistências e potenciômetro no regulador
+
+Resistências utilizadas:
+
+Potenciômetro utilizado: 
+
+Preço:
+
+Dados no circuito: as resistências e o potenciômetro foram dimensionados de forma a cumprir aproximadamente todos os requisitos abaixo
+Vin * (R2 + Rp)/(R2 + Rp + R1) > 13V
+i1 = 15mA + i2
+i2 = 1,05mA + i3
+Rp = 2,5 R2
+i1 < 30mA
+
+Para obter valores com folga e disponíveis para compra:
+Vin = 26 (está entre 25,1 e 26,88)
+Tomando Rp = 5k
+R2 = 2k
+i3 = 1,86mA
+i2 = 2,86mA
+i1 = 17,86mA
+R1 = 750ohm
+
+V1 * (R2 + Rp)/(R2 + Rp + R1) = 26 * 7000/7750 = 23,5V > 13V
