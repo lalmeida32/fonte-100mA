@@ -332,6 +332,8 @@ Necessário estudar o transistor NPN antes de prosseguir.
 
 ## Dimensionamento
 
+#### tinyurl.com/y8z7htxh
+
 ### Transformador
 
 Transformador utilizado: 10+10 bivolt 800mA. Usaremos os terminais das pontas a fim de obter 20V
