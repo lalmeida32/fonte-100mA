@@ -340,9 +340,7 @@ https://produto.mercadolivre.com.br/MLB-1304934993-transformador-trafo-1010v-800
 
 Preço: 30 reais
 
-Dados no circuito:
-A tensão máxima no secundário será de aproximadamente 28,28V
-A corrente que passará por ele será de x ma
+Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V. A corrente que passará por ele será de x mA
 
 Por que usaremos esse transformador:
 
@@ -354,10 +352,9 @@ https://www.robocore.net/loja/itens-eletronicos/diodo-1n4007?gclid=CjwKCAjwxLH3B
 
 Preço: 18 centavos a unidade
 
-Dados no circuito: provocará uma queda de tensão de 0,7V cada um
-A tensão máxima que antes era 28,28V, será de 26,88V depois de passar pela ponte retificadora
+Dados no circuito: provocará uma queda de tensão de 0,7V cada um. A tensão máxima que antes era 28,28V, será de 26,88V depois de passar pela ponte retificadora.
 
-Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V(editado)
+Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V
 
 ### Capacitor
 
@@ -381,7 +378,7 @@ Preço: 8 centavos
 
 Dados no circuito: a corrente que passará por ele será de 15 mA (o circuito foi dimensionado pensando nessa corrente).
 
-Por que usaremos esse zener: é comum, barato e como o circuito será regulado a no maximo 12V, como é uma queda de tensão entre base e emissor no transisor, 13V é o ideal.(editado)
+Por que usaremos esse zener: é comum, barato e como o circuito será regulado a no maximo 12V e há uma queda de tensão entre base e emissor no transistor, 13V é o ideal.
 
 ### Transistor NPN
 
@@ -392,9 +389,13 @@ https://www.robocore.net/loja/itens-eletronicos/transistor-npn-bc337?gclid=CjwKC
 Preço: 24 centavos a unidade
 
 Dados no circuito: os dados irão depender de como o potenciômetro será regulado e da resistência na carga
+
 Considerando uma carga de 120 ohm e o potenciômetro no estado em que o máximo de tensão é fornecida à carga, como há uma queda de tensão de 0,7V, a carga receberá em torno de 12,3V no máximo, então a corrente no emissor será de 102,5 mA
+
 Considerando o ganho mínimo de 100, a corrente na base será 1,01mA, e no coletor será 101,5mA
+
 Considerando agora o ganho máximo de 630, a corrente na base será 0,16mA, e no coletor será 102,34mA
+
 A tensão de base e coletor será entre 12,1V e 13,88V
 
 Por que usaremos esse transistor: é comum, barato e suporta a tensão e corrente necessárias no circuito
@@ -403,24 +404,36 @@ Por que usaremos esse transistor: é comum, barato e suporta a tensão e corrent
 
 Resistências utilizadas:
 
-Potenciômetro utilizado: 
+Potenciômetro utilizado:
 
 Preço:
 
 Dados no circuito: as resistências e o potenciômetro foram dimensionados de forma a cumprir aproximadamente todos os requisitos abaixo
-Vin * (R2 + Rp)/(R2 + Rp + R1) > 13V
-i1 = 15mA + i2
-i2 = 1,05mA + i3
-Rp = 2,5 R2
-i1 < 30mA
+
+    Vin * (R2 + Rp)/(R2 + Rp + R1) > 13V
+
+    i1 = 15mA + i2
+
+    i2 = 1,05mA + i3
+
+    Rp = 2,5 R2
+
+    i1 < 30mA
 
 Para obter valores com folga e disponíveis para compra:
-Vin = 26 (está entre 25,1 e 26,88)
-Tomando Rp = 5k
-R2 = 2k
-i3 = 1,86mA
-i2 = 2,86mA
-i1 = 17,86mA
-R1 = 750ohm
 
-V1 * (R2 + Rp)/(R2 + Rp + R1) = 26 * 7000/7750 = 23,5V > 13V
+    Vin = 26 (está entre 25,1 e 26,88)
+
+Tomando Rp = 5k
+
+    R2 = 2k
+
+    i3 = 1,86mA
+
+    i2 = 2,86mA
+
+    i1 = 17,86mA
+
+    R1 = 750ohm
+
+    V1 * (R2 + Rp)/(R2 + Rp + R1) = 26 * 7000/7750 = 23,5V > 13V
