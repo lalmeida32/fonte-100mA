@@ -343,9 +343,9 @@ Se Vo for maior que Vzener (o objetivo), o Vzener irá agir e, ao invés da tens
 
 O transistor NPN tem 2 funções principalmente: a primeira, utilizar uma corrente baixa para controlar a corrente mais alta que passará na carga (de resistência Rl); a segunda, "isolar" a carga para que ele não interfira no cálculo do divisor de tensão e altere a tensão no diodo zener.
 
-A tensão na carga pode ser calculada como se ela estivesse em paralelo com o conjunto do resistor R2 e o potenciômetro (até onde o cursor está posicionado), considerando a queda de tensão de aproximadamente 0,7V que o transistor provoca.
+A tensão na carga pode ser calculada como se ela estivesse em paralelo com o conjunto do resistor R2 e o potenciômetro (até onde o cursor está posicionado), considerando a queda de tensão de aproximadamente 0.7V que o transistor provoca.
 
-É dessa forma que a tensão na carga pode ser regulada: em um dos extremos do cursor do potenciômetro, a tensão que passará pela carga será Vzener - 0,7V; no outro extremo, a tensão que passará pela carga será Vr2 (a tensão em R2) - 0,7V.
+É dessa forma que a tensão na carga pode ser regulada: em um dos extremos do cursor do potenciômetro, a tensão que passará pela carga será Vzener - 0.7V; no outro extremo, a tensão que passará pela carga será Vr2 (a tensão em R2) - 0.7V.
 
 ## Dimensionamento
 
