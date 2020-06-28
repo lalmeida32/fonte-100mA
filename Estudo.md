@@ -361,7 +361,7 @@ https://produto.mercadolivre.com.br/MLB-1304934993-transformador-trafo-1010v-800
 
 Preço: 30 reais
 
-Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V. A corrente que passará por ele (no secundário) será de aproximadamente <SUBSTITUIR> mA.
+Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V.
 
 Por que usaremos esse transformador: Atende às necessidades, já que a tensão fornecida será maior que 13V com folga, é barato e não será danificado pela corrente que passará por ele.
 
