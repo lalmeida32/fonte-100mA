@@ -361,31 +361,31 @@ https://produto.mercadolivre.com.br/MLB-1304934993-transformador-trafo-1010v-800
 
 Preço: 30 reais
 
-Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V. A corrente que passará por ele será de x mA
+Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V. A corrente que passará por ele (no secundário) será de aproximadamente x mA
 
-Por que usaremos esse transformador:
+Por que usaremos esse transformador: Atende às necessidades, já que a tensão fornecida será maior que 13V com folga, é barato e não será danificado pela corrente que passará por ele.
 
 ### Diodos para ponte retificadora
 
-Diodos utilizados: 1n4001.
+Diodos utilizados: 1n4001
 
 https://www.robocore.net/loja/itens-eletronicos/diodo-1n4007?gclid=CjwKCAjwxLH3BRApEiwAqX9arQYP_1w9nsWFqdvp4X-WlUcxEd8-nIBf6EI5o0YcvvptZfaJRTloMRoCyW0QAvD_BwE
 
 Preço: 18 centavos a unidade
 
-Dados no circuito: provocará uma queda de tensão de 0,7V cada um. A tensão máxima que antes era 28,28V, será de 26,88V depois de passar pela ponte retificadora.
+Dados no circuito: provocará uma queda de tensão de 0.7V cada um. A tensão máxima que antes era 28.28V, será de 26.88V depois de passar pela ponte retificadora.
 
-Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V
+Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V.
 
 ### Capacitor
 
-Capacitor utilizado: eletrolítico 470uF / 50V
+Capacitor utilizado: eletrolítico 270uF / 50V
 
-https://www.baudaeletronica.com.br/capacitor-eletrolitico-470uf-50v.html
+https://produto.mercadolivre.com.br/MLB-1539705638-cap-eletrolitico-270uf-50v-kit-c-50-pcs-_JM?matt_tool=79246729&matt_word&gclid=Cj0KCQjw3Nv3BRC8ARIsAPh8hgJOoLrQkDYLJqg39wcG0bboEYxBCcrLzJXZ2tlZwHFAX_THqohX_jQaArT6EALw_wcB&quantity=1
 
-Preço: 82 centavos
+Preço: 31 centavos a unidade
 
-Dados no circuito: proporcionará um ripple de 25,1V a 26,88V
+Dados no circuito: proporcionará um ripple de 23.9V a 26.88V
 
 Por que usaremos esse capacitor: é comum, barato, torna a variação de tensão no ripple baixa e suporta até 50V.
 
