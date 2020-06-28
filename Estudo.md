@@ -176,7 +176,7 @@ Enrolamento:  O enrolamento de um transformador é formado de várias bobinas (o
 
 Núcleo: responsável por transferir a corrente do enrolamento primário para o enrolamento secundário. A mudança no fluxo magnético na bobina secundária induz uma tensão elétrica na bobina secundária
 
-O transformador altera a tensão através de duas bobinas, seguindo uma proporção de uma bobina para a outra. ex: se tivermos 100 voltas em uma e 10 voltas na outra, a tensão será transformada na proporção de 10 para 1, ou seja, se tivermos 100V na entrada, teremos 10V na saída.
+O transformador altera a tensão através de duas bobinas, seguindo uma proporção de uma bobina para a outra. Ex: se tivermos 100 voltas em uma e 10 voltas na outra, a tensão será transformada na proporção de 10 para 1, ou seja, se tivermos 100V na entrada, teremos 10V na saída.
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/20-simbolo-transformador.png?raw=true)
 
@@ -201,7 +201,7 @@ Geralmente transformadores são projetados também com um fio a mais no primári
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/23-transformador-12-12.png?raw=true)
 
-Este é um exemplo de transformador real. Nesse caso, o fio de 127V está no meio da bobina, como na derivação central, mas não se encontra exatamente no meio.
+Este é um exemplo de transformador real. Nesse caso, o fio de 127V está próximo ao meio da bobina, como na derivação central, mas não se encontra exatamente no meio.
 
 Uma chave seletora pode ajudar na passagem de 127V para 220V e vice-versa.
 
@@ -221,7 +221,7 @@ Note também que tc é o terminal do cursor, enquanto t1 e t2 são os terminais 
 
 Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R1 e de R2 pode ser regulado pelo cursor. Por exemplo, ao aproximar o cursor de t1, R1 se aproxima de 0Ω e R2 se aproxima de 100Ω. Ao aproximar de t2, R2 se aproxima de 0Ω enquanto R1 se aproxima de 100Ω. Há infinitos valores intermediários, como R1 = 67.3Ω e R2 = 32.7Ω.
 
-Potenciômetros podem ser encontrados, por exemplo, em caixas de som no regulador de áudio.
+Potenciômetros podem ser encontrados, por exemplo, em caixas de som no regulador de volume.
 
 ### Transistor NPN
 
