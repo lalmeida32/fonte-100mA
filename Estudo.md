@@ -413,11 +413,11 @@ Dados no circuito: os dados irão depender de como o potenciômetro será regula
 
 Considerando uma carga de 120 ohm e o potenciômetro no estado em que o máximo de tensão é fornecida à carga, como há uma queda de tensão de 0,7V, a carga receberá em torno de 12,3V no máximo, então a corrente no emissor será de 102,5 mA
 
-Considerando o ganho mínimo de 100, a corrente na base será 1,01mA, e no coletor será 101,5mA
+    Considerando o ganho mínimo de 100, a corrente na base será 1,01mA, e no coletor será 101,5mA
 
-Considerando agora o ganho máximo de 630, a corrente na base será 0,16mA, e no coletor será 102,34mA
+    Considerando agora o ganho máximo de 630, a corrente na base será 0,16mA, e no coletor será 102,34mA
 
-A tensão entre base e coletor será entre 10,9V e 13,88V.
+    A tensão entre base e coletor será entre 10,9V e 13,88V.
 
 Quando o potenciômetro estiver no estado em que o mínimo de tensão é fornecida à carga, a corrente será desprezível e a tensão entre base e coletor será entre 20,2V e 23,18V.
 
@@ -443,18 +443,18 @@ Tomando Rp = 5k, R2 = 2.2k e R1 = 1k e considerando o caso em que o potenciômet
 
 Primeiro, considerando o menor valor para Vin possível (23,9V):
 
-Corrente no resistor R1: 10,9mA
+    Corrente no resistor R1: 10,9mA
 
-Corrente no resistor R2: 1,8mA
+    Corrente no resistor R2: 1,8mA
 
-Vin * (R2 + Rp)/(R2 + Rp + R1) = 23,9 * 7200/8200 = 21V > 13V
+    Vin * (R2 + Rp)/(R2 + Rp + R1) = 23,9 * 7200/8200 = 21V > 13V
 
 Agora, o maior valor possível (26,88V):
 
-Corrente no resistor R1: 13,9mA
+    Corrente no resistor R1: 13,9mA
 
-Corrente no resistor R2: 1,8mA
+    Corrente no resistor R2: 1,8mA
 
-26,88 * 7200/8200 > 21V > 13V
+    26,88 * 7200/8200 > 21V > 13V
 
 Por que usaremos esses resistores e esse potenciômetro: são fáceis de encontrar (valores comerciais), baratos, suportam a corrente que passará por eles com folga e atendem às necessidades do circuito.
