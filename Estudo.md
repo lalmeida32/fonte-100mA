@@ -367,7 +367,7 @@ Por que usaremos esse transformador: Atende às necessidades, já que a tensão 
 
 ### Diodos para ponte retificadora
 
-Diodos utilizados: 1n4001
+Diodos utilizados: 1n4007
 
 https://www.robocore.net/loja/itens-eletronicos/diodo-1n4007?gclid=CjwKCAjwxLH3BRApEiwAqX9arQYP_1w9nsWFqdvp4X-WlUcxEd8-nIBf6EI5o0YcvvptZfaJRTloMRoCyW0QAvD_BwE
 
@@ -375,7 +375,7 @@ Preço: 18 centavos a unidade
 
 Dados no circuito: provocará uma queda de tensão de 0,7V cada um. A tensão máxima que antes era 28,28V, será de 26,88V depois de passar pela ponte retificadora.
 
-Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V.
+Por que usaremos esse diodo: pois ele é comum, barato e suporta alta tensão (um 1n4001 seria suficiente, mas na internet foi mais fácil encontrar 1n4007).
 
 ### Capacitor
 
@@ -444,6 +444,7 @@ Tomando Rp = 5k, R2 = 2.2k e R1 = 1k e considerando o caso em que o potenciômet
 Primeiro, considerando o menor valor para Vin possível (23,9V):
 
 Corrente no resistor R1: 10,9mA
+
 Corrente no resistor R2: 1,8mA
 
 Vin * (R2 + Rp)/(R2 + Rp + R1) = 23,9 * 7200/8200 = 21V > 13V
@@ -451,6 +452,9 @@ Vin * (R2 + Rp)/(R2 + Rp + R1) = 23,9 * 7200/8200 = 21V > 13V
 Agora, o maior valor possível (26,88V):
 
 Corrente no resistor R1: 13,9mA
+
 Corrente no resistor R2: 1,8mA
 
 26,88 * 7200/8200 > 21V > 13V
+
+Por que usaremos esses resistores e esse potenciômetro: são fáceis de encontrar (valores comerciais), baratos, suportam a corrente que passará por eles com folga e atendem às necessidades do circuito.
