@@ -295,9 +295,11 @@ No começo do primeiro ciclo da onda, o capacitor estará sendo carregado até a
 
 Com o *ripple*, a tensão está mais estável: ainda varia, mas muito menos.
 
-### Papel do Diodo Zener
+### Papel do Circuito Regulador
 
-Antes de mais nada, deve-se entender o que é um divisor de tensão.
+O circuito regulador vai regular a tensão na carga de acordo com a posição do cursor do potenciômetro.
+
+Esse circuito será explicado por partes.
 
 #### Divisor de tensão
 
@@ -323,14 +325,31 @@ Funciona da seguinte forma: se o Vout calculado pelo divisor de tensão em Rl fo
 
 Mas se Vout for maior que Vzener, a tensão em Rl e no zener será Vzener, e a tensão em Rs será Vin - Vzener.
 
-Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o circuito funcionará do modo esperado.
+Observe que o diodo zener está polarizado inversamente. Apenas dessa forma o circuito funcionará do modo esperado, pois caso contrário, seria como um diodo comum.
 
+#### Potenciômetro, carga e transistor
 
-#### Papel na fonte
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/34-circuito-regulador.png?raw=true)
 
-Necessário estudar o transistor NPN antes de prosseguir.
+A região no lado esquerdo do circuito é a do divisor de tensão combinado com o diodo zener.
+
+Considerando apenas o divisor de tensão, o potenciômetro (de resistência Rp) pode ser considerado um resistor, conectado em série com R2.
+
+Dessa forma, aplicando a fórmula do divisor de tensão e da resistência equivalente para resistores em série, temos:
+
+    Vo = (V ∙ (R2 + Rp)) / (R1 + R2 + Rp)
+
+Se Vo for maior que Vzener (o objetivo), o Vzener irá agir e, ao invés da tensão Vo passar pelo conjunto Rp e R2, será a tensão Vzener que passará.
+
+O transistor NPN tem 2 funções principalmente: a primeira, utilizar uma corrente baixa para controlar a corrente mais alta que passará na carga (de resistência Rl); a segunda, "isolar" a carga para que ele não interfira no cálculo do divisor de tensão e altere a tensão no diodo zener.
+
+A tensão na carga pode ser calculada como se ela estivesse em paralelo com o conjunto do resistor R2 e o potenciômetro (até onde o cursor está posicionado), considerando a queda de tensão de aproximadamente 0,7V que o transistor provoca.
+
+É dessa forma que a tensão na carga pode ser regulada: em um dos extremos do cursor do potenciômetro, a tensão que passará pela carga será Vzener - 0,7V; no outro extremo, a tensão que passará pela carga será Vr2 (a tensão em R2) - 0,7V.
 
 ## Dimensionamento
+
+### Link para o Circuito
 
 #### tinyurl.com/y8z7htxh
 
