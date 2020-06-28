@@ -125,13 +125,13 @@ Na realidade, o diodo conectado diretamente funciona como chave fechada a partir
 
 A região do meio de um diodo é chamada de barreira de potencial (ou camada de depleção). Ela separa o cátodo e o ânodo de um diodo. Quando um diodo é ligado inversamente, essa barreira aumenta pois as cargas positivas são atraídas para o polo negativo da pilha e as cargas negativas, para o polo positivo da pilha. Já se o diodo é ligado diretamente, ao aumentar a tensão, a barreira de potencial fica cada vez menor até que, em certo momento, ela desaparece e o diodo passa a funcionar como um fio.
 
-Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, apesar da fonte de tensão fornecer 10V, a tensão no resistor será em torno de 9.2V, já que se trata de um diodo de silício (o material influencia na tensão necessária para "quebrar" a barreira de potencial).
+Dessa forma, o diodo causa uma queda de tensão no circuito. No exemplo abaixo, apesar da fonte de tensão fornecer 10V, a tensão no resistor será em torno de 9,2V, já que se trata de um diodo de silício (o material influencia na tensão necessária para "quebrar" a barreira de potencial).
 
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/16-circuito-e-grafico-diodo.png?raw=true)
 
-*Observação: é comum dizer que o diodo de silício causa uma queda de tensão de aproximadamente 0.7V. Aqui neste documento está escrito como se causasse 0.8V por conta do gráfico presente na imagem*
+*Observação: é comum dizer que o diodo de silício causa uma queda de tensão de aproximadamente 0,7V. Aqui neste documento está escrito como se causasse 0,8V por conta do gráfico presente na imagem*
 
-O significado da sigla LED é *Light Emissor Diode*, ou seja, se trata de um diodo também. LEDs costumam causar uma queda de tensão maior que 0.7V, geralmente multímetros possuem uma função para calcular essa tensão.
+O significado da sigla LED é *Light Emissor Diode*, ou seja, se trata de um diodo também. LEDs costumam causar uma queda de tensão maior que 0,7V, geralmente multímetros possuem uma função para calcular essa tensão.
 
 Há coisas como corrente e tensão máximas que um diodo pode suportar. Isso depende do diodo e esse tipo de informação pode ser encontrada no datasheet.
 
@@ -151,7 +151,7 @@ O diodo zener tem uma corrente máxima suportável, e isso é delimitado de acor
 
     Izmax = Pz/Vz
 
-    Izmin = Izmax ∙ 0.10
+    Izmin = Izmax ∙ 0,10
 
     Rzmin = (Vcc - Vz)/Izmax
 
@@ -219,7 +219,7 @@ O cursor pode ser ajustado manualmente. Ele determina qual porção da resistên
 
 Note também que tc é o terminal do cursor, enquanto t1 e t2 são os terminais de R1 e de R2, respectivamente.
 
-Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R1 e de R2 pode ser regulado pelo cursor. Por exemplo, ao aproximar o cursor de t1, R1 se aproxima de 0Ω e R2 se aproxima de 100Ω. Ao aproximar de t2, R2 se aproxima de 0Ω enquanto R1 se aproxima de 100Ω. Há infinitos valores intermediários, como R1 = 67.3Ω e R2 = 32.7Ω.
+Suponha um potenciômetro de 100Ω. R1 + R2 sempre será 100Ω, mas o valor de R1 e de R2 pode ser regulado pelo cursor. Por exemplo, ao aproximar o cursor de t1, R1 se aproxima de 0Ω e R2 se aproxima de 100Ω. Ao aproximar de t2, R2 se aproxima de 0Ω enquanto R1 se aproxima de 100Ω. Há infinitos valores intermediários, como R1 = 67,3Ω e R2 = 32,7Ω.
 
 Potenciômetros podem ser encontrados, por exemplo, em caixas de som no regulador de volume.
 
@@ -343,9 +343,9 @@ Se Vo for maior que Vzener (o objetivo), o Vzener irá agir e, ao invés da tens
 
 O transistor NPN tem 2 funções principalmente: a primeira, utilizar uma corrente baixa para controlar a corrente mais alta que passará na carga (de resistência Rl); a segunda, "isolar" a carga para que ele não interfira no cálculo do divisor de tensão e altere a tensão no diodo zener.
 
-A tensão na carga pode ser calculada como se ela estivesse em paralelo com o conjunto do resistor R2 e o potenciômetro (até onde o cursor está posicionado), considerando a queda de tensão de aproximadamente 0.7V que o transistor provoca.
+A tensão na carga pode ser calculada como se ela estivesse em paralelo com o conjunto do resistor R2 e o potenciômetro (até onde o cursor está posicionado), considerando a queda de tensão de aproximadamente 0,7V que o transistor provoca.
 
-É dessa forma que a tensão na carga pode ser regulada: em um dos extremos do cursor do potenciômetro, a tensão que passará pela carga será Vzener - 0.7V; no outro extremo, a tensão que passará pela carga será Vr2 (a tensão em R2) - 0.7V.
+É dessa forma que a tensão na carga pode ser regulada: em um dos extremos do cursor do potenciômetro, a tensão que passará pela carga será Vzener - 0,7V; no outro extremo, a tensão que passará pela carga será Vr2 (a tensão em R2) - 0,7V.
 
 ## Dimensionamento
 
@@ -361,7 +361,7 @@ https://produto.mercadolivre.com.br/MLB-1304934993-transformador-trafo-1010v-800
 
 Preço: 30 reais
 
-Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V. A corrente que passará por ele (no secundário) será de aproximadamente x mA
+Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,28V. A corrente que passará por ele (no secundário) será de aproximadamente <SUBSTITUIR> mA.
 
 Por que usaremos esse transformador: Atende às necessidades, já que a tensão fornecida será maior que 13V com folga, é barato e não será danificado pela corrente que passará por ele.
 
@@ -373,7 +373,7 @@ https://www.robocore.net/loja/itens-eletronicos/diodo-1n4007?gclid=CjwKCAjwxLH3B
 
 Preço: 18 centavos a unidade
 
-Dados no circuito: provocará uma queda de tensão de 0.7V cada um. A tensão máxima que antes era 28.28V, será de 26.88V depois de passar pela ponte retificadora.
+Dados no circuito: provocará uma queda de tensão de 0,7V cada um. A tensão máxima que antes era 28,28V, será de 26,88V depois de passar pela ponte retificadora.
 
 Por que usaremos esse diodo: pois ele é comum, barato e suporta até 50V.
 
@@ -385,21 +385,21 @@ https://produto.mercadolivre.com.br/MLB-1539705638-cap-eletrolitico-270uf-50v-ki
 
 Preço: 31 centavos a unidade
 
-Dados no circuito: proporcionará um ripple de 23.9V a 26.88V
+Dados no circuito: proporcionará um ripple de 23,9V a 26,88V
 
 Por que usaremos esse capacitor: é comum, barato, torna a variação de tensão no ripple baixa e suporta até 50V.
 
 ### Diodo Zener
 
-Zener utilizado: BZX55C [13V / 0.5W]
+Zener utilizado: BZX55C [13V / 0,5W]
 
 https://www.baudaeletronica.com.br/diodo-zener-bzx55c-13v-0-5w.html
 
-Preço: 8 centavos
+Preço: 9 centavos
 
-Dados no circuito: a corrente que passará por ele será de 15 mA (o circuito foi dimensionado pensando nessa corrente).
+Dados no circuito: a corrente que passará por ele será de 8,2 mA a 10,9 mA, aproximadamente (a variação ocorre por conta do *ripple*). Para que o diodo funcione corretamente, é necessário que passe ao menos 3,8mA por ele (e no máximo, 38mA). Dessa forma, ele está sendo alimentado de maneira correta: com folga e sem danificá-lo.
 
-Por que usaremos esse zener: é comum, barato e como o circuito será regulado a no maximo 12V e há uma queda de tensão entre base e emissor no transistor, 13V é o ideal.
+Por que usaremos esse zener: é comum, barato, e como o circuito será regulado a no máximo 12V e há uma queda de tensão entre base e emissor no transistor, 13V é o ideal.
 
 ### Transistor NPN
 
@@ -417,44 +417,40 @@ Considerando o ganho mínimo de 100, a corrente na base será 1,01mA, e no colet
 
 Considerando agora o ganho máximo de 630, a corrente na base será 0,16mA, e no coletor será 102,34mA
 
-A tensão de base e coletor será entre 12,1V e 13,88V
+A tensão entre base e coletor será entre 10,9V e 13,88V.
+
+Quando o potenciômetro estiver no estado em que o mínimo de tensão é fornecida à carga, a corrente será desprezível e a tensão entre base e coletor será entre 20,2V e 23,18V.
 
 Por que usaremos esse transistor: é comum, barato e suporta a tensão e corrente necessárias no circuito
 
-### Resistências e potenciômetro no regulador
+### Resistores e potenciômetro no regulador
 
-Resistências utilizadas:
+Resistores utilizados: 1k e 2.2k
 
-Potenciômetro utilizado:
+Potenciômetro utilizado: 5k
 
-Preço:
+https://www.engetronic-sc.com.br/produtos/ver/321/potenciometro-linear-5k-l15---eixo-estriado-tracking-google-shopping?gclid=Cj0KCQjw3Nv3BRC8ARIsAPh8hgJ0FChjyK9vocYBgfldQy7j2Pse0-l_idTZ0iNpJngsEBgyiqvtofkaAqLBEALw_wcB
 
-Dados no circuito: as resistências e o potenciômetro foram dimensionados de forma a cumprir aproximadamente todos os requisitos abaixo
+https://www.robocore.net/loja/itens-eletronicos/resistor-1k-pacote-com-10-unidades?gclid=Cj0KCQjw3Nv3BRC8ARIsAPh8hgIWM1y2G34SD7-tczS923PPDzohgqbYDrJMymhz6VmJgYpguPpxyvwaAvVsEALw_wcB
 
-    Vin * (R2 + Rp)/(R2 + Rp + R1) > 13V
+https://www.eletroinfocia.com.br/resistor-1-4w-2k2?parceiro=5383&gclid=Cj0KCQjw3Nv3BRC8ARIsAPh8hgIYW0y8DoWLAFSC3mD8_5y1W9r2wVgBxpERvJd_8GI4131PIfijfdAaArM8EALw_wcB
 
-    i1 = 15mA + i2
+Preço: por volta de 2 reais e 10 centavos
 
-    i2 = 1,05mA + i3
+Dados no circuito:
 
-    Rp = 2,5 R2
+Tomando Rp = 5k, R2 = 2.2k e R1 = 1k e considerando o caso em que o potenciômetro está fornecendo o máximo de tensão à carga.
 
-    i1 < 30mA
+Primeiro, considerando o menor valor para Vin possível (23,9V):
 
-Para obter valores com folga e disponíveis para compra:
+Corrente no resistor R1: 10,9mA
+Corrente no resistor R2: 1,8mA
 
-    Vin = 26 (está entre 25,1 e 26,88)
+Vin * (R2 + Rp)/(R2 + Rp + R1) = 23,9 * 7200/8200 = 21V > 13V
 
-Tomando Rp = 5k
+Agora, o maior valor possível (26,88V):
 
-    R2 = 2k
+Corrente no resistor R1: 13,9mA
+Corrente no resistor R2: 1,8mA
 
-    i3 = 1,86mA
-
-    i2 = 2,86mA
-
-    i1 = 17,86mA
-
-    R1 = 750ohm
-
-    V1 * (R2 + Rp)/(R2 + Rp + R1) = 26 * 7000/7750 = 23,5V > 13V
+26,88 * 7200/8200 > 21V > 13V
