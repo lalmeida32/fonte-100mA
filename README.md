@@ -58,8 +58,8 @@
   * *eagle.jpg*: um export do projeto esquemático no EAGLE
   * *pcb.png*: um export do projeto em PCB no EAGLE
   * *circuito.png*: foto do circuito no falstad
-
-
+ 
+  * *FONTE*: arquivos do projeto no Eagle (contém esquemático e PCB)
 
 
 
