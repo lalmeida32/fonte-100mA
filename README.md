@@ -64,7 +64,7 @@
 
 # Diagrama da Fonte
 
-
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/revisao-do-projeto/arquivos-circuitos/circuito.png?raw=true)
 
 ![img](https://i.imgur.com/2E5dJVi.jpg)
 
