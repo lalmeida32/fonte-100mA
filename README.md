@@ -64,13 +64,12 @@
 
 * **arquivos-circuitos**
 
+  * **FONTE**: arquivos do projeto no Eagle (contém esquemático e PCB)
   * *circuit-20200628-2337.circuitjs.txt*: um export do circuito feito no Falstad.
   * **EAGLE:** diretório contendo os arquivos do projeto no EAGLE
   * *eagle.jpg*: um export do projeto esquemático no EAGLE
   * *pcb.png*: um export do projeto em PCB no EAGLE
   * *circuito.png*: foto do circuito no falstad
-
-
 
 
 
