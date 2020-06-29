@@ -1,1 +1,83 @@
-# fonte-100mA
+# Projeto: Fonte-100mA — TRABALHO 01
+
+
+
+### Grupo 19, Integrantes:
+
+* Adrio O. Alves (*11796830*) 
+* Eduardo V. B. Rossi (*10716887*)
+* Felipi Y. Santos (*11917292*)
+* Lucas F. de Almeida (*1162063*)
+
+
+
+**Docente**: Eduardo do Valle Simões 																																**Curso**: SSC0180 - Eletrônica para Computação
+
+**Bacharelado em Ciências da Computação — 2020**
+**Instituto de Ciências Matemáticas e de Computação**
+**Universidade de São Paulo**
+
+---
+
+
+
+
+
+
+
+
+
+# Introdução
+
+
+
+​	O projeto de trabalho 1 tem como objetivo a construção de uma fonte de alimentação genérica que precisa  fornecer tensão máxima de até 100mA (*miliampères*). O projeto conta com um diagrama contendo os componentes eletrônicos escolhidos para construção da fonte, juntamente com o preço de cada um. Além disso, o projeto da fonte foi modelado em duas ferramentas de construção de circuitos: Falstad e EAGLE, e também um vídeo apresentando uma visão geral.
+
+
+
+
+
+ # O repositório
+
+
+
+* **estudo-do-projeto**
+
+  * *Estudos.md*: Esse markdown dá informações do que cada componente eletrônico usado na fonte é, como ele é usado na fonte, isto é, seu papel, e no final há o dimensionamento, mostrando gastos e links onde obteríamos os itens. 
+
+  * **imagens**: fotos de peças/dependência do Estudos.md
+
+  * *Dimensionamento.md*: relação de gastos e links para cada componente
+
+    
+
+* **arquivos-circuitos**
+
+  * *circuit-20200628-2337.circuitjs.txt*: um export do circuito feito no Falstad.
+  * *eagle.png*: um export do projeto esquemático no EAGLE
+
+
+
+
+
+# Diagrama da Fonte
+
+
+
+![img](https://i.imgur.com/2E5dJVi.jpg)
+
+
+
+# Links 
+
+* Vídeo explicativo da fonte: 
+* Falstad (cópia em arquivos-circuitos): [tinyurl.com/y8z7htxh]()
+* Eagle (esquemático): https://imgur.com/2E5dJVi
+
+
+
+# Sobre os componentes não encontrados 
+
+
+
+​	Como o EAGLE não possui todos os componentes que foram utilizados na fonte, tivemos de utilizar componentes com funcionalidade e dimensionamento igual no lugar.
