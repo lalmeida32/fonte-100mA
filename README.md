@@ -44,7 +44,7 @@
 
 * **estudo-do-projeto**
 
-  * *Estudos.md*: Esse markdown dá informações do que cada componente eletrônico usado na fonte é, como ele é usado na fonte, isto é, seu papel, e no final há o dimensionamento, mostrando gastos e links onde obteríamos os itens.
+  * *Estudos.md*: Esse markdown dá informações do que cada componente eletrônico usado na fonte é, como ele é usado na fonte, isto é, seu papel.
 
   * **imagens**: fotos de peças/dependência do Estudos.md
 
@@ -71,16 +71,16 @@
 ![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/revisao-do-projeto/arquivos-circuitos/pcb.png?raw=true)
 
 
+
+# Sobre os componentes não encontrados no EAGLE
+
+
+
+​	Como o EAGLE não possui todos os componentes que foram utilizados na fonte, tivemos de utilizar componentes com funcionalidade e dimensões iguais no lugar.
+
+
 # Links
 
 * Vídeo explicativo da fonte:
 * Falstad (cópia em arquivos-circuitos): [tinyurl.com/y8z7htxh]()
 * Eagle (esquemático): https://imgur.com/2E5dJVi
-
-
-
-# Sobre os componentes não encontrados
-
-
-
-​	Como o EAGLE não possui todos os componentes que foram utilizados na fonte, tivemos de utilizar componentes com funcionalidade e dimensionamento igual no lugar.
