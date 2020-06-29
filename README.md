@@ -82,5 +82,5 @@
 # Links
 
 * Vídeo explicativo da fonte:
-* Falstad (cópia em arquivos-circuitos): [tinyurl.com/y8z7htxh]()
+* Falstad (cópia em arquivos-circuitos): tinyurl.com/y8z7htxh
 * Eagle (esquemático): https://imgur.com/2E5dJVi
