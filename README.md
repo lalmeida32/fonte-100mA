@@ -129,6 +129,6 @@
 # Links
 
 * Vídeo explicativo da fonte: https://youtu.be/iQQ3Y2TPxfM
-* Falstad (cópia em arquivos-circuitos): [tinyurl.com/y8z7htxh]()
+* Falstad (cópia em arquivos-circuitos): tinyurl.com/y8z7htxh
 * Eagle (esquemático): https://imgur.com/a/H5OCaSa
 * Eagle (PCB): https://imgur.com/a/zWWUykP
