@@ -464,8 +464,7 @@ Por que usaremos esses resistores e esse potenciômetro: são fáceis de encontr
 
 ### Esquemático
 
-
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/estudo-do-projeto/images/36-eagle.jpeg?raw=true)
 
 ### PCB
-
 
