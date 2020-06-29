@@ -57,6 +57,7 @@
   * *circuit-20200628-2337.circuitjs.txt*: um export do circuito feito no Falstad.
   * *eagle.jpg*: um export do projeto esquemático no EAGLE
   * *pcb.png*: um export do projeto em PCB no EAGLE
+  * *circuito.png*: foto do circuito no falstad
 
 
 
