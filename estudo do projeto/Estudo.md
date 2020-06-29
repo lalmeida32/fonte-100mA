@@ -29,7 +29,7 @@ Nesse caso, ρ é uma constante associada ao material, (resistividade do materia
 Resistores combinados em série e em paralelo podem ser substituídos por um resistor equivalente. Caso os resistores sejam ligados em série, a nova resistência será igual à soma das resistências. Em paralelo, o inverso da nova resistência será igual à soma do inverso das resistências.
 
     Associação em série: Req = R1 + R2 + ⋯
-    
+
     Associação em paralelo: 1/Req = 1/R1 + 1/R2 + ⋯
 
 É importante notar o que acontece com a tensão e a corrente em circuitos elétricos em série e em paralelo.
@@ -84,7 +84,7 @@ Sendo assim, temos que 1F = 1C/V.
 Ao associar capacitores em série ou paralelo, podemos obter um capacitor com capacitância equivalente aplicando as seguintes fórmulas:
 
     Associação em série: 1/Ceq = 1/C1 + 1/C2 + ⋯
-    
+
     Associação em paralelo: Ceq = C1 + C2 + ⋯
 
 É importante também estudar o circuito RC. (Resistor e Capacitor)
@@ -144,17 +144,17 @@ Há coisas como corrente e tensão máximas que um diodo pode suportar. Isso dep
 O diodo zener é como um diodo normal, porem a partir de certa tensão ele passa a ser um curto circuito, essa é a TENSÃO ZENER. Se a tensão no diodo zener for menor que a tensão zener ele não conduz, assim como os diodos convencionais. Se a tensão for maior que a tensão zener, o diodo zener mesmo estando contrario ao circuito vai conduzir.
 
     Uin < |Vzener|, Uout = Uin
-    
+
     Uin > |Vzener|, Uout = Vzener
 
 O diodo zener tem uma corrente máxima suportável, e isso é delimitado de acordo com a potencia do componente, caso a potência do circuito seja ultrapassada, o diodo pode se danificar.
 
     Izmax = Pz/Vz
-    
+
     Izmin = Izmax ∙ 0,10
-    
+
     Rzmin = (Vcc - Vz)/Izmax
-    
+
     Rzmax = (Vcc - Vz)/Izmin
 
 *Rz: Resistor limitador de corrente*
@@ -347,6 +347,3 @@ O transistor NPN tem 2 funções principalmente: a primeira, utilizar uma corren
 A tensão na carga pode ser calculada como se ela estivesse em paralelo com o conjunto do resistor R2 e o potenciômetro (até onde o cursor está posicionado), considerando a queda de tensão de aproximadamente 0,7V que o transistor provoca.
 
 É dessa forma que a tensão na carga pode ser regulada: em um dos extremos do cursor do potenciômetro, a tensão que passará pela carga será Vzener - 0,7V; no outro extremo, a tensão que passará pela carga será Vr2 (a tensão em R2) - 0,7V.
-
-
-Por que usaremos esses resistores e esse potenciômetro: são fáceis de encontrar (valores comerciais), baratos, suportam a corrente que passará por eles com folga e atendem às necessidades do circuito.

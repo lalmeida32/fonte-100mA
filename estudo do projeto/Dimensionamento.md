@@ -1,16 +1,16 @@
-## Dimensionamento
+# Dimensionamento
 
-### 
+##
 
-### Link para o Circuito
+## Link para o Circuito
 
-#### 
+###
 
-#### tinyurl.com/y8z7htxh
+### tinyurl.com/y8z7htxh
 
-### 
+##
 
-### Transformador
+## Transformador
 
 Transformador utilizado: 10+10 bivolt 800mA. Usaremos os terminais das pontas a fim de obter 20V
 
@@ -22,9 +22,9 @@ Dados no circuito: a tensão máxima no secundário será de aproximadamente 28,
 
 Por que usaremos esse transformador: Atende às necessidades, já que a tensão fornecida será maior que 13V com folga, é barato e não será  danificado pela corrente que passará por ele.
 
-### 
+##
 
-### Diodos para ponte retificadora
+## Diodos para ponte retificadora
 
 Diodos utilizados: 1n4007
 
@@ -36,9 +36,9 @@ Dados no circuito: provocará uma queda de tensão de 0,7V cada um. A  tensão m
 
 Por que usaremos esse diodo: pois ele é comum, barato e suporta alta  tensão (um 1n4001 seria suficiente, mas na internet foi mais fácil  encontrar 1n4007).
 
-### 
+##
 
-### Capacitor
+## Capacitor
 
 Capacitor utilizado: eletrolítico 270uF / 50V
 
@@ -50,9 +50,9 @@ Dados no circuito: proporcionará um ripple de 23,9V a 26,88V
 
 Por que usaremos esse capacitor: é comum, barato, torna a variação de tensão no ripple baixa e suporta até 50V.
 
-### 
+##
 
-### Diodo Zener
+## Diodo Zener
 
 Zener utilizado: BZX55C [13V / 0,5W]
 
@@ -64,9 +64,9 @@ Dados no circuito: a corrente que passará por ele será de 8,2 mA a 10,9 mA, ap
 
 Por que usaremos esse zener: é comum, barato, e como o circuito será  regulado a no máximo 12V e há uma queda de tensão entre base e emissor  no transistor, 13V é o ideal.
 
-### 
+##
 
-### Transistor NPN
+## Transistor NPN
 
 Transistor NPN utilizado: BC337
 
@@ -90,9 +90,9 @@ Quando o potenciômetro estiver no estado em que o mínimo de tensão é  fornec
 
 Por que usaremos esse transistor: é comum, barato e suporta a tensão e corrente necessárias no circuito
 
-### 
+##
 
-### Resistores e potenciômetro no regulador
+## Resistores e potenciômetro no regulador
 
 Resistores utilizados: 1k e 2.2k
 
