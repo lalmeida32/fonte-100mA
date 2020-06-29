@@ -459,3 +459,13 @@ Agora, o maior valor possível (26,88V):
     26,88 * 7200/8200 > 21V > 13V
 
 Por que usaremos esses resistores e esse potenciômetro: são fáceis de encontrar (valores comerciais), baratos, suportam a corrente que passará por eles com folga e atendem às necessidades do circuito.
+
+## Eagle e PCB
+
+### Esquemático
+
+
+
+### PCB
+
+
