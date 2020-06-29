@@ -172,6 +172,7 @@ Como a potência se mantém constante, ao usarmos o transformador para diminuir 
     P1 = P2 <=> V1 . I1 = V2 . I2
 
 Estrutura:
+
 Enrolamento:  O enrolamento de um transformador é formado de várias bobinas (os transformadores mais comuns usam duas) que em geral são feitas de cobre. Quando a corrente passa pela bobina forma um campo magnético que produz uma tensão elétrica nas extremidades desse enrolamento. A alteração na corrente presente na bobina do circuito primário altera o fluxo magnético nesse circuito e também na bobina do circuito secundário.
 
 Núcleo: responsável por transferir a corrente do enrolamento primário para o enrolamento secundário. A mudança no fluxo magnético na bobina secundária induz uma tensão elétrica na bobina secundária
