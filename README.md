@@ -68,7 +68,7 @@
 
 ![img](https://i.imgur.com/2E5dJVi.jpg)
 
-![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/roteiro-readme/arquivos-circuitos/pcb.png?raw=true)
+![alt text](https://github.com/cs-lucasalmeida/fonte-100mA/blob/revisao-do-projeto/arquivos-circuitos/pcb.png?raw=true)
 
 
 # Links
@@ -79,7 +79,7 @@
 
 
 
-### Sobre os componentes não encontrados
+# Sobre os componentes não encontrados
 
 
 
